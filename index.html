@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forside</title>
+</head>
+    <body>
+        <header id="global-header">
+            <a href="index.html"><img id="main-logo" src="bilder/img/fav.png" alt="nettsted logo"></a>
+            <nav class="flex-menu" id="menu">
+                <a href=order.html><i class="fa-solid fa-magnifying-glass" style="color: #252525;" ></i></a>
+                <i class="fa-regular fa-circle-user"></i><a href="#" style="text-decoration: none; color: #1ca2c1;">Min side</a>
+                <a href="#" style="text-decoration: none; color: #1ca2c1;"><h3>Opprett en konto</h3></a>
+                <h4>Tips og Inspirasjon</h4>
+                <ul>
+                    <li><a href="hotell.html" style="text-decoration: none; color: #252525;"><h4>Hotell</h4></a></li>
+                    <li><a href="https://www.norwegian.no/" style="text-decoration: none; color: #252525;"><h4>Fly</h4></a></li>
+                    <li><a href="#" style="text-decoration: none; color: #252525;"><h4>Kontakt Oss</h4></a></li>
+                </ul>
+            </nav>
+            <section id="banner">
+                <img id="banner-image" src="bilder/img/sea-4768869_1920.jpg" alt="bannerbilde">  
+            </section>
+            <section>
+                <div>
+                    <nav class="tabs"> <!--kilde hentet fra:https://www.w3schools.com/howto/howto_js_tabs.asp-->
+                      <button class="tablinks" onclick="(event, Fly + Hotell)"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</button>
+                      <button class="tablinks" onclick="(event, Fly)"><i class="fa-solid fa-plane"></i> Fly</button>
+                      <button class="tablinks" onclick="(event, Storby)"><i class="fa-solid fa-city"></i> Storby</button>
+                      <button class="tablinks" onclick="(event, Ski)"><i class="fa-solid fa-person-skiing"></i> Ski</button>
+                      <button class="tablinks" onclick="(event, Kombinasjonsreiser)"><i class="fa-solid fa-map-location-dot"></i> konbinasjonsreiser</button>
+                    </nav>
+                </div>
+                    <p>Fra</p>
+                    <label>
+                    <select>
+                    <option value="Oslo Lufthavn">Oslo Lufthavn</option>
+                    </select>
+                    </label>
+                    <p>Til</p>
+                    <label>
+                    <select>
+                    <option value="Albania">Albania</option>
+                    </select>
+                    </label>
+                    <p>Reiselengde</p>
+                    <label>
+                    <select>
+                    <option value="Mindre er">Mindre er</option>
+                    </select>
+                    </label>
+                    <p>Velg dato</p>
+                    <label>
+                    <input type="date" max="2026-11-12" required>
+                    </label>
+                    <p>Antall reisende</p>
+                    <form> <!--kilde hentet fra:https://www.w3schools.com/tags/att_input_type_number.asp-->
+                    <input type="number" id="quantity" name="quantity" min="1" max="2">
+                    </form>
+                    <form>
+                    <input type="submit" value="Søk" class="button">
+                    </form>
+            </section>
+        </header>
+        <main>
+            <section>
+            <div class="container">
+            <img id="kampanje" src="bilder/img/holiday-2733322_1280.jpg" alt="Kampanjebilde">
+            <h3>Bestill sommerens beste uke</h3>
+            <p>Fly + Hotell, 7 dager</p>
+            <h1>Fra 3 298,-</h1>
+            <form>
+            <input type="submit" value="Bestill i dag" class="button">
+            </form>
+            </div>
+            </section>
+            <section id="grid">
+                <article class="product-card">
+                    <h3>Få eksklusive tilbud</h3>
+                    <a href="#" style="color: #1ca2c1;"><h5>Log inn/Opprett konto og få rabattkoder >></h5></a>
+                </article>
+                <article class="product-card">
+                    <h3>Billige resteplasser</h3>
+                    <a href="#" style="color: #1ca2c1;"><h5>Opptil 50% rabatt >></h5></a>
+                </article>
+                <article class="product-card">
+                    <h3>Mars - spar opptil 5000,-</h3>
+                    <a href="#" style="color: #1ca2c1;"><h5>Sikre deg et feriekupp >></h5></a>
+                </article>
+            </section>
+        <div>
+            <h3>Tips & inspirasjon</h3>
+            <section id="grid2">
+                <article class="product-card-forside">
+                    <img id="strand1" src="bilder/img/beach-6514331_640.jpg" alt="Strand1">
+                    <h4>Gresk favoritter</h4>
+                    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" style="color: #252525;"><p>Fra kr 3 970 →</p></a>
+                </article>
+                <article class="product-card-forside">
+                    <img id="strand2" src="bilder/img/beach-1836467_640.jpg" alt="Strand2">
+                    <h4>Solskinnspriser - bestill i dag!</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" style="color: #252525;"><p>Fra kr 3 203 →</p></a>
+                </article>
+                <article class="product-card-forside">
+                    <img id="cathedral" src="bilder/img/cathedral-427997_640.jpg" alt="Cathedral">
+                    <h4>Storbyferie</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" style="color: #252525;"><p>Les mer →</p></a>
+                </article>
+                <article class="product-card-forside">
+                    <img id="building" src="bilder/img/building-7014904_640.jpg" alt="London">
+                    <h4>Besøk påskefavoritten London</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" style="color: #252525;"><p>Fra kr 2 150 →</p></a>
+                </article>
+                <article class="product-card-forside">
+                    <img id="Skiing" src="bilder/img/ski-slope-3223709_640.jpg" alt="Skiing">
+                    <h4>Skiferie</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" style="color: #252525;"><p>Se alle skistedene →</p></a>
+                </article>
+                <article class="product-card-forside">
+                    <img id="strand3" src="bilder/img/beach-666122_640.jpg" alt="Strand3">
+                    <h4>Spar opptil 7000,- til sommer</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" style="color: #252525;"><p>Les mer →</p></a>
+                </article>
+            </section>
+        </div>
+        </main>
+        <aside>
+        </aside>
+        <footer>
+            <section>
+                <img id="flag-logo1" src="bilder/flags/sweden.png" alt="Sweden"> Sverige
+                <img id="flag-logo2" src="bilder/flags/denmark.png" alt="Denmark"> Danmark
+                <img id="flag-logo3" src="bilder/flags/norway.png" alt="Norway"> Norge
+                <img id="flag-logo4" src="bilder/flags/netherlands.png" alt="Netherlands"> Nederland
+            </section>
+            <section>
+                <h2>Betalingsmetoder</h2>
+                <nav>
+                    <ul>
+                        <li>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-apple-pay"></i>
+                        <i class="fa-brands fa-amazon-pay"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h2>Nyheter & Tilbud</h2>
+                <p>Meld deg på nyhetsbrev her</p>
+                <form>
+                    <label for="search"></label>
+                    <input type="search" placeholder="ola@example" id="search">
+                    <input type="submit" value="send" class="button">
+                </form>
+                <a href="#"><p>Kjøp reisegavekort</p></a>
+            </section>
+            <section>
+                <h2>Kundeservice</h2>
+                <p>Spørsmål og svar</p>
+                <p>Chat</p>
+                <p>Kontakt</p>
+                <p>Tilgjenglighetserklæring</p>
+            </section>
+            <section>
+                <h2>Sosiale Medier</h2>
+                <nav class="flex-space-b">
+                    <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank" style="color: #f6f5f2;"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" style="color: #f6f5f2;"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank" style="color: #f6f5f2;"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="https://www.tiktok.com/explore" target="_blank" style="color: #f6f5f2;"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" style="color: #f6f5f2;"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </footer>
+    </body>
+</html>
